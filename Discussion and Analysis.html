@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Discussion and Analysis</title>
+        <style>
+            body {
+                --background: #4a7fa7;
+                --text: #f4f8fb;
+                --accent: #e6b85c;
+                --card-1: #3f7398;
+                --card-2: #376887;
+                --shadow: rgba(0, 0, 0, 0.3);
+
+                font-family: Arial, Helvetica, sans-serif;
+                color: var(--text);
+                background-color: var(--background);
+                transition: background-color 0.5s, color 0.5s;
+            }
+
+            body.leafy {
+                --background: #235347;
+                --text: #daf1de;
+                --accent: #bea256;
+                --card-1: #163832;
+                --card-2: #0b2b26;
+            }
+
+            header {
+                margin: 0px;
+            }
+
+            main {
+                font-size: 20px;
+            }
+
+            li {
+                margin: 2px;
+            }
+
+            .btn {
+                color: var(--text);
+                background-color: var(--background);
+                padding: 10px 5px;
+                border: 2px solid var(--accent);
+                border-radius: 5px;
+                transition: 0.5s;
+                cursor: pointer;
+            }
+
+            .home-btn {
+                width: 70px;
+                font-size: 18px;
+                box-shadow: 0 4px 8px var(--shadow);
+            }
+
+            .ref-btn {
+                width: 110px;
+                transition: 0.5s;
+                font-size: 18px;
+                box-shadow: 0 4px 8px var(--shadow);
+            }
+
+            .theme-btn {
+                font-size: 18px;
+                box-shadow: 0 4px 8px var(--shadow);
+            }
+
+            .home-btn:hover {
+                width: 80px;
+                opacity: 0.8;
+                background-color: var(--accent);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+            }
+
+            .ref-btn:hover {
+                width: 120px;
+                opacity: 0.8;
+                background-color: var(--accent);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+            }
+
+            .theme-btn:hover {
+                opacity: 0.8;
+                background-color: var(--accent);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+            }
+
+            .header-div {
+                display: flex;
+                justify-content: end;
+                gap: 20px;
+                padding: 10px;
+            }
+
+            .opening-div {
+                border-top: 2px solid var(--accent);
+                border-bottom: 2px solid var(--accent);
+                padding: 10px;
+            }
+
+            .intro-hr {
+                width: 250px;
+                margin: 10px auto 10px auto;
+                height: 2px;
+                background-color: var(--accent);
+                position: relative;
+                top: -15px;
+                border: none;
+            }
+
+            .intro-div {
+                text-align: center;
+            }
+
+            .card1,
+            .card-content1,
+            .card3,
+            .card-content3,
+            .card5,
+            .card-content5 {
+                background-color: var(--card-1);
+                padding: 10px;
+            }
+
+            .card2,
+            .card-content2,
+            .card4,
+            .card-content4 {
+                background-color: var(--card-2);
+                padding: 10px;
+            }
+
+            .title {
+                font-weight: bold;
+                font-size: 22px;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+
+            .hr1,
+            .hr2,
+            .hr3,
+            .hr4,
+            .hr5 {
+                width: 50%;
+                height: 2px;
+                background-color: var(--accent);
+                border: none;
+                margin-bottom: 10px;
+            }
+
+            .outro-div {
+                position: relative;
+                bottom: 0px;
+                left: 0px;
+            }
+
+            .author {
+                text-align: center;
+                font-size: 18px;
+                margin-top: 20px;
+            }
+        </style>
+
+    </head>
+    <body class="sky">
+        <header>
+            <div class="header-div">
+                <a href="Homepage.html" target="_blank">
+                    <button class="home-btn btn">
+                        Home
+                    </button>
+                </a>
+                <a href="References.html" target="_blank">
+                    <button class="ref-btn btn">
+                        References
+                    </button>
+                </a>
+                <button id="theme-toggle" class="theme-btn btn" type="button">
+                    Leafy Theme
+                </button>
+            </div>
+            
+        </header>
+        
+        <main>
+            <div class="opening-div">
+                <h2 class="title-CAT">
+                    Discussion and Analysis of Information Found
+                </h2>
+            </div>
+
+            <div class="intro-div">
+                <p>
+                    After analysis of the questionnaire responses,
+                    the following information has been extracted:
+                </p>
+                <hr class="intro-hr">
+            </div>
+
+            <div class="body-div">
+                <div class="card1">
+                    <p class="card-content1 title">
+                        Questionnaire Findings
+                    </p>
+                    <hr class="hr1">
+                    <p class="card-content1">
+                        The questionnaire responses show that online gaming is a 
+                        common activity among the respondents, although the amount of time 
+                        spent gaming varies from person to person. The survey found that most 
+                        respondents spend less than one hour per day gaming during school 
+                        holidays. Fewer respondents spend between one and six hours gaming, 
+                        while only a very small number spend more than six hours. 
+                        This suggests that the majority of respondents participate in online gaming 
+                        in moderation rather than excessively.
+                    </p>
+                </div>
+                
+                <div class="card2">
+                    <p class="card-content2 title">
+                        Negative Effects of Online Gaming
+                    </p>
+                    <hr class="hr2">
+                    <p class="card-content2">
+                        The questionnaire also explored the negative effects associated with online gaming. 
+                        The results showed that 12 out of 25 respondents reported experiencing no negative effects, 
+                        making this the most common response. However, several respondents reported experiencing negative 
+                        consequences. The most frequently reported problems were reduced physical activity and lack 
+                        of sleep, while only a small number of respondents reported addiction or overuse. 
+                        These findings suggest that although most participants appear to use online gaming responsibly, 
+                        excessive gaming can negatively affect a person's health and daily routine.
+                    </p>
+                </div>
+
+                <div class="card3">
+                    <p class="card-content3 title">
+                        Supporting Research
+                    </p>
+                    <hr class="hr3">
+                    <p class="card-content3">
+                        Research from reliable educational and health sources supports these findings. 
+                        Organizations such as the World Health Organization (WHO), Harvard Health Publishing, 
+                        the American Psychological Association (APA) and Common Sense Media explain that online 
+                        gaming can provide benefits such as improved problem-solving skills, teamwork, 
+                        communication and stress relief. However, these sources also warn that excessive gaming 
+                        may contribute to poor sleeping habits, reduced physical activity, addiction and lower academic 
+                        performance if it is not properly managed.
+                    </p>
+                </div>
+
+                <div class="card4">
+                    <p class="card-content4 title">
+                        Overall Opinions
+                    </p>
+                    <hr class="hr4">
+                    <p class="card-content4">
+                        The overall opinions collected through the questionnaire further support this balanced view of online gaming. 
+                        Of the 25 respondents:
+                    </p>
+                    <ul class="card-content4">
+                        <li class="card-content4">21 believed that online gaming has both benefits and disadvantages.</li>
+                        <li class="card-content4">3 believed that it is mostly harmful.</li>
+                        <li class="card-content4">1 considered it mostly beneficial.</li>
+                    </ul>
+                    <p class="card-content4">
+                        These results indicate that most participants recognize that online gaming is neither entirely positive 
+                        nor entirely negative. Instead, its effects depend largely on how much time is spent gaming and whether 
+                        healthy limits are maintained.
+                    </p>
+                </div>
+
+                <div class="card5">
+                    <p class="card-content5 title">
+                        Data Analysis
+                    </p>
+                    <hr class="hr5">
+                    <p class="card-content5">
+                        The spreadsheet calculations, database queries and graphs helped identify these patterns more clearly. 
+                        Grouping respondents according to age, gender, gaming frequency and opinions made it easier to compare 
+                        responses and identify the most common behaviors and experiences among participants.
+                    </p>
+                    <p class="card-content5">
+                        Overall, the collected data supports the information found in the research sources. 
+                        The findings suggest that moderate gaming is generally associated with positive experiences, while 
+                        excessive gaming is linked to negative health and lifestyle effects.
+                    </p>
+                </div>
+            </div>
+        </main>
+        <div class="outro-div">
+            <p class="author">
+                By: Caleb Lengo
+            </p>
+        </div>
+    
+        <script>
+            const themeToggle = document.getElementById("theme-toggle");
+
+            themeToggle.addEventListener("click", () => {
+                document.body.classList.toggle("leafy");
+
+                if (document.body.classList.contains("leafy")) {
+                    themeToggle.textContent = "Sky Theme";
+                } else {
+                    themeToggle.textContent = "Leafy Theme";
+                }
+            });
+        </script>
+
+    </body>
+</html>

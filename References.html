@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>References</title>
+    <style>
+        body {
+            --background: #4a7fa7;
+            --text: #f4f8fb;
+            --accent: #e6b85c;
+            --card: #376887;
+            --shadow: rgba(0, 0, 0, 0.3);
+
+            font-family: Arial, Helvetica, sans-serif;
+            color: var(--text);
+            background-color: var(--background);
+            transition: background-color 0.5s, color 0.5s;
+        }
+
+        body.leafy {
+            --background: #235347;
+            --text: #daf1de;
+            --accent: #bea256;
+            --card: #0b2b26;
+        }
+
+        header {
+            margin: 0px;
+        }
+
+        main {
+            font-size: 20px;
+        }
+
+        .header-div {
+            display: flex;
+            justify-content: end;
+            gap: 20px;
+            padding: 10px;
+        }
+
+        .opening-div {
+            border-top: 2px solid var(--accent);
+            border-bottom: 2px solid var(--accent);
+            padding: 10px;
+        }
+
+        .btn {
+            color: var(--text);
+            font-size: 18px;
+            padding: 10px 5px;
+            border: 2px solid var(--accent);
+            border-radius: 5px;
+            width: 110px;
+            background-color: var(--background);
+            transition: 0.5s;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            width: 120px;
+            opacity: 0.8;
+            background-color: var(--accent);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        }
+
+        .theme-btn:hover {
+            width: 120px;
+        }
+    </style>
+</head>
+<body class="sky">
+    <header>
+        <div class="header-div">
+            <a href="Homepage.html" target="_blank">
+                <button class="btn">
+                    Home
+                </button>
+            </a>
+
+            <a href="Discussion and Analysis.html" target="_blank">
+                <button class="btn">
+                    Discussion and Analysis
+                </button>
+            </a>
+
+            <button id="theme-toggle" class="btn theme-btn" type="button">
+                Leafy Theme
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div class="opening-div">
+            <h2 class="title-CAT">
+                References used for all the information found:
+            </h2>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    Amazing Home Decor Co. (2024) Eco-conscious gaming setup. 
+                    Available at: <a href="https://www.amazinghomedecorco.com/lookbook/green-game-rooms/" target="_blank">https://www.amazinghomedecorco.com/lookbook/green-game-rooms/</a>
+                </li>
+                <li>
+                    Pinterest (n.d.) First battlestation setup! Blue Palette. 
+                    Available at:<a href="https://www.bing.com/images/search?view=detailV2&ccid=xa%2B%2BJW%2B8&id=EDB8FD56F12D1345F87C9BF5F55129941B480D5C&thid=OIP.xa--JW-8fy34FI4F6edvuAHaFC&mediaurl=https%3A%2F%2Fi.pinimg.com%2F736x%2Fa0%2F27%2F86%2Fa027869a17dcaca878dee6a983c18b10.jpg&cdnurl=https%3A%2F%2Fth.bing.com%2Fth%2Fid%2FR.c5afbe256fbc7f2df8148e05e9e76fb8%3Frik%3DXA1IG5QpUfX1mw%26pid%3DImgRaw%26r%3D0&exph=500&expw=735&q=gaming+blue&ck=29BE9CBC673B6E52140C9EB9D212A865&selectedIndex=9&itb=0&ajaxhist=0&shtc=0&shth=OIP.xa--JW-8fy34FI4F6edvuAHaFC&shsc=idp&form=EX0050&shid=bc89c64d-65db-4f6e-bb71-2a5f4adc36b3&shtp=GetUrl&shtk=Rmlyc3QgYmF0dGxlc3RhdGlvbiBzZXR1cCEgQmx1ZSBQYWxldHRlIHwgQ29tcHV0ZXIgZ2FtaW5nIHJvb20sIEdhbWluZyAuLi4%3D&shdk=Rm91bmQgb24gQmluZyBmcm9tIHd3dy5waW50ZXJlc3QuY29t&shhk=fq%2FEzh1aZtaWZXgJ9wv3sBFM%2BfDKzwFDDnELiejZaM0%3D" target="_blank">
+                    https://www.bing.com/images/search</a>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <div class="outro-div">
+        <p class="author">
+            By: Caleb Lengo
+        </p>
+    </div>
+    <script>
+        const themeToggle = document.getElementById("theme-toggle");
+
+        themeToggle.addEventListener("click", () => {
+            document.body.classList.toggle("leafy");
+
+            if (document.body.classList.contains("leafy")) {
+                themeToggle.textContent = "Sky Theme";
+            } else {
+                themeToggle.textContent = "Leafy Theme";
+            }
+        });
+    </script>
+</body>
+</html>

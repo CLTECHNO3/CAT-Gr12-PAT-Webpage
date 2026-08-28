@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homepage</title>
+    <style>
+        body {
+            --background: #4a7fa7;
+            --text: #f4f8fb;
+            --accent: #e6b85c;
+            --card: #376887;
+            --shadow: rgba(0, 0, 0, 0.3);
+
+            font-family: Arial, Helvetica, sans-serif;
+            color: var(--text);
+            background-color: var(--background);
+            transition: background-color 0.5s, color 0.5s;
+        }
+
+        body.leafy {
+            --background: #235347;
+            --text: #daf1de;
+            --accent: #bea256;
+            --card: #0b2b26;
+        }
+
+        header {
+            margin: 0px;
+        }
+
+        main {
+            font-size: 20px;
+        }
+
+        .btn {
+            color: var(--text);
+            font-size: 18px;
+            padding: 10px 5px;
+            border: 2px solid var(--accent);
+            border-radius: 5px;
+            width: 110px;
+            background-color: var(--background);
+            transition: 0.5s;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            width: 120px;
+            opacity: 0.8;
+            background-color: var(--accent);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        }
+
+        .theme-btn:hover {
+            width: 120px;
+        }
+
+        .header-div {
+            display: flex;
+            justify-content: end;
+            gap: 20px;
+            padding: 10px;
+            background-color: transparent;
+        }
+
+        .opening-div {
+            margin: 0px;
+            border-top: 2px solid var(--accent);
+            border-bottom: 2px solid var(--accent);
+            padding: 10px;
+        }
+
+        .title-CAT {
+            margin-top: 0px;
+            text-align: center;
+        }
+
+        .title-img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .title-topic {
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .intro-div {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0px 0px 0px;
+        }
+
+        .intro-hr {
+            width: 250px;
+            margin: 10px auto 10px auto;
+            height: 2px;
+            background-color: var(--accent);
+            position: relative;
+            top: -15px;
+            border: none;
+        }
+
+        .main-div {
+            margin: 0px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            border: 1px solid var(--accent);
+            background-color: var(--card);
+            border-radius: 5px;
+            padding: 10px 20px;
+            width: 30%;
+            transition: background-color 0.5s, border-color 0.5s;
+        }
+
+        .card-content1,
+        .card-content2 {
+            background-color: var(--card);
+        }
+
+        .outro-div {
+            position: relative;
+            bottom: 0px;
+            left: 0px;
+        }
+
+        .author {
+            text-align: center;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body class="sky">
+    <header>
+        <div class="header-div">
+            <a href="Discussion and Analysis.html" target="_blank">
+                <button class="btn">
+                    Effects
+                </button>
+            </a>
+
+            <a href="References.html" target="_blank">
+                <button class="btn">
+                    References
+                </button>
+            </a>
+
+            <button id="theme-toggle" class="btn theme-btn">
+                Leafy Theme
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div class="opening-div">
+            <h1 class="title-CAT">
+                Computer Applications Technology PAT 2026.
+            </h1>
+            <p class="title-topic">
+                The impact of Online Gaming on consumers
+            </p>
+            <img src="gaming pic blue homepg.jpg" alt="Online Gaming picture" class="title-img" id="image">
+        </div>
+
+        <div>
+            <div class="intro-div">
+                <p>
+                    What is this website about?
+                </p>
+            </div>
+
+            <hr class="intro-hr">
+        </div>
+
+        <div class="main-div">
+            <div class="card">
+                <p class="card-content1">
+                    Online gaming has become one of the most popular forms of entertainment among people of all ages,
+                    especially teenagers and young adults. With the increasing availability of the internet, smartphones,
+                    computers and gaming consoles, more people are spending time playing online games for entertainment,
+                    relaxation and social interaction. Online gaming allows players to connect with friends and other players
+                    around the world while developing skills such as teamwork, communication and problem-solving.
+                    However, excessive gaming has also raised concerns about its possible effects on academic performance,
+                    physical health, mental well-being and social relationships.
+                </p>
+            </div>
+
+            <div class="card">
+                <p class="card-content2">
+                    The purpose of this investigation was to answer the focus question: "What are the effects, benefits and
+                    disadvantages of online gaming?" The investigation aimed to determine how online gaming influences people's
+                    daily lives by examining both its positive and negative effects. Information was gathered from reliable websites,
+                    journals and other credible sources, and a questionnaire was designed and completed by 25 respondents to collect
+                    first-hand data. The responses were captured in Microsoft Excel and Microsoft Access, where functions, formulas,
+                    queries, reports and graphs were used to analyses the data. The results were then interpreted to identify trends
+                    and draw meaningful conclusions about online gaming and its impact on consumers.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <div class="outro-div">
+        <p class="author">
+            By: Caleb Lengo
+        </p>
+    </div>
+
+    <script>
+        const themeToggle = document.getElementById("theme-toggle");
+        const image = document.getElementById("image");
+
+        themeToggle.addEventListener("click", () => {
+            document.body.classList.toggle("leafy");
+
+            if (document.body.classList.contains("leafy")) {
+                themeToggle.textContent = "Sky Theme";
+                image.src = "gaming pic green homepg.jpg";
+            } else {
+                themeToggle.textContent = "Leafy Theme";
+                image.src = "gaming pic blue homepg.jpg";
+            }
+        });
+    </script>
+</body>
+</html>
